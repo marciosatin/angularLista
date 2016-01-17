@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <a href="#/contatos" class="pull-left"> << Contatos</a>
+  <table class="table">
+    <tr>
+      <th>Serial</th>
+      <th>Nome</th>
+      <th>Telefone</th>
+      <th>Operadora</th>
+      <th>Data</th>
+    </tr>
+    <tr>
+      <td>{{contato.serial}}</td>
+      <td>{{contato.nome | name}}</td>
+      <td>{{contato.telefone}}</td>
+      <td>{{contato.operadora.nome}}</td>
+      <td>{{contato.data | date:'dd/MM/yyyy'}}</td>
+    </tr>
+  </table>
+</div>
